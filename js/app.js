@@ -31,8 +31,34 @@ var seatacAirport = {
 }
 
 var seattleCenter = {
-  
+  customers: [],
+  render: function() {
+    var ulEl = document.getElementById('seattleCenter');
+
+    for(var i = 0; i < hours.length; i++) {
+      this.customers.push(Math.floor(Math.random() * (38 - 11 + 1) + 11));
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 3.7)) + ' cookies.';
+      ulEl.appendChild(liEl); 
+    }
+  }
+}
+
+var capitolHill = {
+  customers: [],
+  render: function() {
+    var ulEl = document.getElementById('capitolHill');
+
+    for(var i = 0; i < hours.length; i++) {
+      this.customers.push(Math.floor(Math.random() * (38 - 20 + 1) + 20));
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 2.3)) + ' cookies.';
+      ulEl.appendChild(liEl);
+    }
+  }
 }
 
 firstAndPike.render();
 seatacAirport.render();
+seattleCenter.render();
+capitolHill.render();
