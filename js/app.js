@@ -15,10 +15,10 @@ var firstAndPike = {
       this.totalSales += Math.round((this.customers[i] * 6.3));
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 6.3)) + ' cookies';
       ulEl.appendChild(liEl);
-    } 
-  liEl = document.createElement('li');
-  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-  ulEl.appendChild(liEl);           
+    }
+    liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
+    ulEl.appendChild(liEl);
   }
 };
 
@@ -34,10 +34,10 @@ var seatacAirport = {
       this.totalSales += Math.round((this.customers[i] * 1.2));
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 1.2)) + ' cookies';
       ulEl.appendChild(liEl);
-    } 
-  liEl = document.createElement('li');
-  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-  ulEl.appendChild(liEl);           
+    }
+    liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
+    ulEl.appendChild(liEl);           
   }
 };
 
@@ -53,10 +53,10 @@ var seattleCenter = {
       this.totalSales += Math.round((this.customers[i] * 3.7));
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 3.7)) + ' cookies';
       ulEl.appendChild(liEl);
-    } 
-  liEl = document.createElement('li');
-  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-  ulEl.appendChild(liEl);           
+    }
+    liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
+    ulEl.appendChild(liEl);           
   }
 };
 
@@ -72,10 +72,10 @@ var capitolHill = {
       this.totalSales += Math.round((this.customers[i] * 2.3));
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 2.3)) + ' cookies';
       ulEl.appendChild(liEl);
-    } 
-  liEl = document.createElement('li');
-  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-  ulEl.appendChild(liEl);           
+    }
+    liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
+    ulEl.appendChild(liEl);           
   }
 };
 
@@ -91,10 +91,10 @@ var alki = {
       this.totalSales += Math.round((this.customers[i] * 4.6));
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 4.6)) + ' cookies';
       ulEl.appendChild(liEl);
-    } 
-  liEl = document.createElement('li');
-  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-  ulEl.appendChild(liEl);           
+    }
+    liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
+    ulEl.appendChild(liEl);           
   }
 };
 
