@@ -17,7 +17,7 @@ var firstAndPike = {
       ulEl.appendChild(liEl);
     } 
   liEl = document.createElement('li');
-  liEl.textContent = 'Total ' + this.totalSales + ' cookies';
+  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
   ulEl.appendChild(liEl);           
   }
 };
@@ -36,7 +36,7 @@ var seatacAirport = {
       ulEl.appendChild(liEl);
     } 
   liEl = document.createElement('li');
-  liEl.textContent = 'Total ' + this.totalSales + ' cookies';
+  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
   ulEl.appendChild(liEl);           
   }
 };
@@ -55,7 +55,7 @@ var seattleCenter = {
       ulEl.appendChild(liEl);
     } 
   liEl = document.createElement('li');
-  liEl.textContent = 'Total ' + this.totalSales + ' cookies';
+  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
   ulEl.appendChild(liEl);           
   }
 };
@@ -74,7 +74,7 @@ var capitolHill = {
       ulEl.appendChild(liEl);
     } 
   liEl = document.createElement('li');
-  liEl.textContent = 'Total ' + this.totalSales + ' cookies';
+  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
   ulEl.appendChild(liEl);           
   }
 };
@@ -93,7 +93,7 @@ var alki = {
       ulEl.appendChild(liEl);
     } 
   liEl = document.createElement('li');
-  liEl.textContent = 'Total ' + this.totalSales + ' cookies';
+  liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
   ulEl.appendChild(liEl);           
   }
 };
