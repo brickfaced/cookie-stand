@@ -36,7 +36,7 @@ var seatacAirport = {
     }
     liEl = document.createElement('li');
     liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-    ulEl.appendChild(liEl);           
+    ulEl.appendChild(liEl);
   }
 };
 
@@ -55,7 +55,7 @@ var seattleCenter = {
     }
     liEl = document.createElement('li');
     liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-    ulEl.appendChild(liEl);           
+    ulEl.appendChild(liEl);
   }
 };
 
@@ -74,7 +74,7 @@ var capitolHill = {
     }
     liEl = document.createElement('li');
     liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-    ulEl.appendChild(liEl);           
+    ulEl.appendChild(liEl);
   }
 };
 
@@ -93,7 +93,7 @@ var alki = {
     }
     liEl = document.createElement('li');
     liEl.textContent = 'Total: ' + this.totalSales + ' cookies';
-    ulEl.appendChild(liEl);           
+    ulEl.appendChild(liEl);
   }
 };
 
