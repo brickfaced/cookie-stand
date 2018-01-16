@@ -58,7 +58,22 @@ var capitolHill = {
   }
 }
 
+var alki = {
+  customers: [],
+  render: function() {
+    var ulEl = document.getElementById('alki');
+
+    for(var i = 0; i < hours.length; i++) {
+      this.customers.push(Math.floor(Math.random() * (16 - 2 + 1) + 2));
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 4.6)) + ' cookies.';
+      ulEl.appendChild(liEl);
+    }
+  }
+}
+
 firstAndPike.render();
 seatacAirport.render();
 seattleCenter.render();
 capitolHill.render();
+alki.render();
