@@ -12,6 +12,7 @@ var firstAndPike = {
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 6.3)) + ' cookies.';
       ulEl.appendChild(liEl);
+      totalSales.sales.push(Math.round(this.customers[i] * 6.3));
     }
   }
 };
@@ -26,6 +27,7 @@ var seatacAirport = {
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 1.2)) + ' cookies.';
       ulEl.appendChild(liEl);
+      totalSales.sales.push(Math.round(this.customers[i] * 1.2));
     }
   }
 }
@@ -39,7 +41,8 @@ var seattleCenter = {
       this.customers.push(Math.floor(Math.random() * (38 - 11 + 1) + 11));
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 3.7)) + ' cookies.';
-      ulEl.appendChild(liEl); 
+      ulEl.appendChild(liEl);
+      totalSales.sales.push(Math.round(this.customers[i] * 3.7)); 
     }
   }
 }
@@ -54,6 +57,7 @@ var capitolHill = {
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 2.3)) + ' cookies.';
       ulEl.appendChild(liEl);
+      totalSales.sales.push(Math.round(this.customers[i] * 2.3));
     }
   }
 }
@@ -68,12 +72,30 @@ var alki = {
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + Math.round((this.customers[i] * 4.6)) + ' cookies.';
       ulEl.appendChild(liEl);
+      totalSales.sales.push(Math.round(this.customers[i] * 4.6));
     }
   }
 }
+
+var totalSales = {
+  sales: [],
+  patsTotalSales: 0,
+  render: function() {
+    for(var i = 0; i < this.sales.length; i++) {
+      this.patsTotalSales += this.sales[i];
+    }
+    var hTwoEl = document.getElementById('totalSales');
+    var pEl = document.createElement('p');
+    pEl.textContent = this.patsTotalSales + ' cookies.';
+    hTwoEl.appendChild(pEl);
+  }
+}
+
 
 firstAndPike.render();
 seatacAirport.render();
 seattleCenter.render();
 capitolHill.render();
 alki.render();
+totalSales.render();
+
