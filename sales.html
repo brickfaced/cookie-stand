@@ -13,6 +13,26 @@
 
   <table id="stores"></table>
 
+  <form id='newStoreForm'>
+    <fieldset>
+      <legend>Calculate sales for new store</legend>
+
+      <label for="storeLocation">New Store:</label>
+      <input name="storeLocation" type="text">
+
+      <label for="maxCustomers">Maximum Customers</label>
+      <input name="maxCustomers" type=number>
+
+      <label for="minCustomers">Minimum Customers</label>
+      <input name="minCustomers" type=number>
+
+      <label for="avgCookies">Average Cookies Per Customer</label>
+      <input name="avgCookies" type=number>
+
+      <button id="addStore">Submit</button>
+    </fieldset>
+  </form>
+
   <a href="index.html" class="link">Return to Home</a>
 
   <script type="text/javascript" src="js/app.js"></script>
