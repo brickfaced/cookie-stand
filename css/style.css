@@ -4,15 +4,29 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Herr Von Muellerhoff', cursive;
   font-size: 72px;
   text-decoration: underline;
   text-align: center;
 }
 
-img {
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+#sigLogo{
   display: block;
+  align-content: center;
+}
+
+img {
+  /* display: block; */
+  max-width: 100%;
   margin: 0px auto; 
 }
 
@@ -24,5 +38,34 @@ img {
   font-size: 36px;
   font-family: 'Herr Von Muellerhoff', cursive;
   color: #CFC9C2;
+  text-align: center;
+}
+
+#aboutUs {
+  float:right;
+  max-height: 33%;
+  max-width: 50%;
+  text-align: center;
+}
+
+#menu {
+  float: left;
+  max-height: 33%;
+  max-width: 50%;
+  text-align: center;
+}
+
+#menu.img{
+  display: block;
+  align-content: center;
+}
+
+#warning {
+  display: block;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.bottomOfPage {
   text-align: center;
 }
